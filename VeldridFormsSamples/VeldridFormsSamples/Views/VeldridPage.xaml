@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:views="clr-namespace:VeldridFormsSamples.Views"
+             mc:Ignorable="d"
+             x:Class="VeldridFormsSamples.Views.VeldridPage">
+    <ContentPage.Content>
+        <StackLayout Padding="12,12,12,40" VerticalOptions="FillAndExpand">
+            <views:VeldridView x:Name="VeldridView"
+                           VerticalOptions="FillAndExpand" />
+            <Button x:Name="RestartButton"
+                Text="Restart"
+                Clicked="RestartButton_Clicked" />
+            <Label Text="ROTATION:" />
+            <Slider x:Name="RotationSlider"
+                Minimum="0"
+                Maximum="500"
+                Value="250"
+                ValueChanged="RotationSlider_ValueChanged" />
+            <Label Text="SELECTED VALUE:" />
+            <Slider x:Name="SelectedBarSlider"
+                Minimum="0"
+                Maximum="5"
+                Value="2.5"
+                ValueChanged="SelectedBarSlider_ValueChanged" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
