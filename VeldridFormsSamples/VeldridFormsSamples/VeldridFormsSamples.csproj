@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="ComputeTexture\Shaders\**">
+      <LogicalName>%(FileName)%(Extension)</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Include="Instancing\Shaders\**">
       <LogicalName>%(FileName)%(Extension)</LogicalName>
     </EmbeddedResource>
@@ -16,6 +22,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="AnimatedMesh\Assets\**">
+      <LogicalName>%(FileName)%(Extension)</LogicalName>
+    </EmbeddedResource>
+    <!--<EmbeddedResource Include="AnimatedMesh\ProcessedAssets\*.binary">
+      <LogicalName>%(FileName)%(Extension)</LogicalName>
+    </EmbeddedResource>-->
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AssimpNet" Version="4.1.0" />
     <PackageReference Include="Veldrid" Version="4.7.0" />
     <PackageReference Include="Veldrid.SPIRV" Version="1.0.13" />
     <PackageReference Include="Veldrid.StartupUtilities" Version="4.7.0" />

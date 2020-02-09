@@ -1,4 +1,5 @@
-﻿using System;
+﻿using VeldridFormsSamples.AnimatedMesh;
+using VeldridFormsSamples.ComputeTexture;
 using VeldridFormsSamples.Instancing;
 using VeldridFormsSamples.SampleBase;
 
@@ -10,6 +11,8 @@ namespace VeldridFormsSamples.Desktop
         {
             var window = new VeldridStartupWindow("Instancing");
             var instancing = new InstancingApplication(window);
+            //var computeTexture = new ComputeTextureApplication(window);
+            //var AnimatedMesh = new AnimatedMeshApplication(window);
             window.Run();
         }
     }
